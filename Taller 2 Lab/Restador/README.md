@@ -11,7 +11,7 @@ Inicialmente partimos de crear un medio restador usando el software de Digital, 
 
 Así entonces la tabla de verdad queda:
 
-![Image](/src/1.png)
+![Image](/Taller 2 lab/Restador/src/1.png)
 
 Analizando la tabla es facìl ver, que la columna rest, tiene forma de una compuerta XOR cuyo valor serà 1, solo cuando sean diferentes. y para la columna de C_out tendremos entonces que se parece a una AND, Con la entrada de ‘A’ negada. Construimos el circuito para este medio restador en digital.  
 
