@@ -3,10 +3,18 @@
 ## Creaciòn de los circuitos en DIGITAL
 
 <p align="center">
+ <img src="/Lab_2/Sumador/src/2.PNG">    
+</p>  
+<p align="center">
+ Circuito Sumador completo de 2 bits   
+</p> 
+
+
+<p align="center">
  <img src="/Lab_2/Sumador/src/3.PNG">    
 </p>  
 <p align="center">
- Circuito Sumador completo    
+ Circuito Sumador completo de 4 bits   
 </p> 
 
 # 2. Implementaciòn de los circuitos en Verilog y Geany
