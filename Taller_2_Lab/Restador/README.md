@@ -18,31 +18,48 @@ Así entonces la tabla de verdad queda:
  Fig 1. Tabla de verdad medio restador.   
 </p>  
 
-
-
-
 Analizando la tabla es facìl ver, que la columna rest, tiene forma de una compuerta XOR cuyo valor serà 1, solo cuando sean diferentes. y para la columna de C_out tendremos entonces que se parece a una AND, Con la entrada de ‘A’ negada. Construimos el circuito para este medio restador en digital.  
 
  
-![Image](/Taller_2_Lab/Restador/src/2.png)  
-Fig 2. Circuito RTL para el medio restador.  
+<p align="center">
+ <img src="/Taller_2_Lab/Restador/src/2.png">    
+</p>  
+<p align="center">
+ Fig 2. Circuito RTL para el medio restador.  
+</p>  
+  
 
 Luego se diseñó en digital un restador completo, en este caso a partir de la tabla de verdad obtenemos su diseño, que contiene una compuerta XOR de 3 entradas, junto con dos AND y OR, ver Fig 3.  
 
  
-![Image](/Taller_2_Lab/Restador/src/3.png)
-Fig 3. Circuito RTL Restador Completo.  
+<p align="center">
+ <img src="/Taller_2_Lab/Restador/src/3.png">    
+</p>  
+<p align="center">
+ Fig 3. Circuito RTL Restador Completo.    
+</p> 
+
 
 Partiendo de lo anterior, entonces se realiza el restador de 4 bits, que tendrá 8 entradas, es decir dos números de 4 bits, que se restaràn entre sì, se sabe que el c_0ut de un circuito irà conectado al c_in del otro, pues se irà acumulado, ya que la resta se harà bit a bit.
 Ver figura 4. 
 
 A su vez tendremos 5 salidas, 4 correspondientes a los bits restados y una 5, correspondiente al C_out del sistema total, este indicarà si el número sale o no en complemento a2, en dado caso que sea 1, el número es negativo y los 4 bits deberán ser convertidos de complemento a dos a binario positivo.
 
-![Image](/Taller_2_Lab/Restador/src/4.png)
-Fig 4. Circuito RTL del Restador de 4 Bits.  
+<p align="center">
+ <img src="/Taller_2_Lab/Restador/src/4.png">    
+</p>  
+<p align="center">
+ Fig 4. Circuito RTL del Restador de 4 Bits.  
+</p> 
 
-![Image](/Taller_2_Lab/Restador/src/5.png)
-Fig 5. Tabla de Verdad abreviada del restador de 4 bits.  
+
+<p align="center">
+ <img src="/Taller_2_Lab/Restador/src/5.png">    
+</p>  
+<p align="center">
+ Fig 5. Tabla de Verdad abreviada del restador de 4 bits.  
+</p> 
+  
 
 Si se desea obtener la tabla completa, ir al archivo .dig del restador de 4 bits y abrir la tabla de verdad.
 
@@ -59,11 +76,21 @@ Como en el caso 0100 = A y B=0001 , en decimal la resta es 4-1 que da 3 positivo
 ## 2.2 Ahì creamos un archivo _tb.v que serà nuestra testbech, en este caso se ajustó, teniendo en cuenta las 8 entradas, creando un array de [7:0] inputs;  y su variaciòn hasta 256, con un for.  A cada valor del array se le asoció un valor de las entradas del restador de cuatro bits. para mejor detalle ver figura 7. Así mismo, se creó un array de [4:0], con 5 espacios para las salida outs y se asignó a cada salida un valor.
  
 
-![Image](/Taller_2_Lab/Restador/src/6.png) 
-Fig 6. Archivo verilog exportado del Restador 4 bits.
+<p align="center">
+ <img src="/Taller_2_Lab/Restador/src/6.png">    
+</p>  
+<p align="center">
+ Fig 6. Archivo verilog exportado del Restador 4 bits.  
+</p> 
 
-![Image](/Taller_2_Lab/Restador/src/7.png)
-Fig 7. Código Verilog del testbech del Restador de 4 bits.
+
+<p align="center">
+ <img src="/Taller_2_Lab/Restador/src/7.png">    
+</p>  
+<p align="center">
+ Fig 7. Código Verilog del testbech del Restador de 4 bits.
+</p> 
+
 
 ## 2.3 Finalmente, teniendo el testbech correctamente, se usan los códigos siguientes para crear el archivo que se abrirá en gtkwave.
 
@@ -83,8 +110,13 @@ Obsérvese, que el bit para el vector A, de menor valor es inputs[4] y para el v
 
 Vector A = [0000] B =[0001] lo que en decimal sería A-B= -1 = 0 -  1=-1.
 
-![Image](/Taller_2_Lab/Restador/src/8.png) 
-Fig 8. Imagen de gtkwave circuito Restador de 4 bits,  C_out negativo.
+<p align="center">
+ <img src="/Taller_2_Lab/Restador/src/8.png">    
+</p>  
+<p align="center">
+ Fig 8. Imagen de gtkwave circuito Restador de 4 bits,  C_out negativo.
+</p> 
+
 
 Por otro lado, tenemos el caso en el que, el C_out da positivo, indicando que el número mayor es positivo, por ejemplo veamos el ejemplo de la figura 9. tenemos:
 
@@ -96,8 +128,13 @@ S= [00110] = 6.
 
  
 
-![Image](/Taller_2_Lab/Restador/src/9.png)
-Fig 9. Imagen de gtkwave circuito Restador de 4 bits,  C_out positivo.
+<p align="center">
+ <img src="/Taller_2_Lab/Restador/src/9.png">    
+</p>  
+<p align="center">
+ Fig 9. Imagen de gtkwave circuito Restador de 4 bits,  C_out positivo.
+</p> 
+
 
 Una cosa curiosa para notar, es que en la gráfica el gtkwave escribe los valores en Hexadecimal.
 
