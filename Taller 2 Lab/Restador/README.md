@@ -1,6 +1,6 @@
-## Proceso para crear un restador. 
+# Proceso para crear un restador. 
 
-# Creaciòn de los circuitos en DIGITAL
+## Creaciòn de los circuitos en DIGITAL
 
 Inicialmente partimos de crear un medio restador usando el software de Digital, para ello realizamos una tabla de verdad con entradas A y B y una salida S, que corresponde a la resta y C_out, de cómo se realiza la resta, partimos de que:
 
@@ -16,12 +16,12 @@ Así entonces la tabla de verdad queda:
  
 Fig 1. Tabla de verdad medio restador.
 
-Analizando la tabla es facìl ver, que la columna rest, tiene forma de una compuerta XOR cuyo valor serà 1, solo cuando sean diferentes. y para la columna de C_out tendremos entonces que se parece a una AND, Con la entrada de ‘A’ negada. Construimos el circuito para este medio restador en digital.
+Analizando la tabla es facìl ver, que la columna rest, tiene forma de una compuerta XOR cuyo valor serà 1, solo cuando sean diferentes. y para la columna de C_out tendremos entonces que se parece a una AND, Con la entrada de ‘A’ negada. Construimos el circuito para este medio restador en digital.  
 
  
 Fig 2. Circuito RTL para el medio restador.
 
-Luego se diseñó en digital un restador completo, en este caso a partir de la tabla de verdad obtenemos su diseño, que contiene una compuerta XOR de 3 entradas, junto con dos AND y OR, ver Fig 3.
+Luego se diseñó en digital un restador completo, en este caso a partir de la tabla de verdad obtenemos su diseño, que contiene una compuerta XOR de 3 entradas, junto con dos AND y OR, ver Fig 3.  
 
  
 
@@ -46,11 +46,11 @@ Si por el contrario, el C_out tiene valor de 0, la respuestà està correcta y n
 
 Como en el caso 0100 = A y B=0001 , en decimal la resta es 4-1 que da 3 positivo, es decir 00011.
 
-Implementaciòn de los circuitos en Verilog y Geany
+# 2. Implementaciòn de los circuitos en Verilog y Geany
 
-2.1 Para comprobar que el circuito funciona correctamente, lo exportamos a Verilog desde Digital y lo abrimos en geany. ver figura 6. 
+## 2.1 Para comprobar que el circuito funciona correctamente, lo exportamos a Verilog desde Digital y lo abrimos en geany. ver figura 6. 
 
-2.2 Ahì creamos un archivo _tb.v que serà nuestra testbech, en este caso se ajustó, teniendo en cuenta las 8 entradas, creando un array de [7:0] inputs;  y su variaciòn hasta 256, con un for.  A cada valor del array se le asoció un valor de las entradas del restador de cuatro bits. para mejor detalle ver figura 7. Así mismo, se creó un array de [4:0], con 5 espacios para las salida outs y se asignó a cada salida un valor.
+## 2.2 Ahì creamos un archivo _tb.v que serà nuestra testbech, en este caso se ajustó, teniendo en cuenta las 8 entradas, creando un array de [7:0] inputs;  y su variaciòn hasta 256, con un for.  A cada valor del array se le asoció un valor de las entradas del restador de cuatro bits. para mejor detalle ver figura 7. Así mismo, se creó un array de [4:0], con 5 espacios para las salida outs y se asignó a cada salida un valor.
  
 
  
@@ -58,7 +58,7 @@ Fig 6. Archivo verilog exportado del Restador 4 bits.
  
 Fig 7. Código Verilog del testbech del Restador de 4 bits.
 
-2.3 Finalmente, teniendo el testbech correctamente, se usan los códigos siguientes para crear el archivo que se abrirá en gtkwave.
+## 2.3 Finalmente, teniendo el testbech correctamente, se usan los códigos siguientes para crear el archivo que se abrirá en gtkwave.
 
 // iverilog -o top.vvp Restador4bits_tb.v Restador4bits.v
 
