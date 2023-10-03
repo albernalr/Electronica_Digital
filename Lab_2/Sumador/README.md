@@ -3,10 +3,17 @@
 ## Creaciòn de los circuitos en DIGITAL
 
 <p align="center">
+ <img src="/Lab_2/Sumador/src/1.PNG">    
+</p>  
+<p align="center">
+ Tabla de verdad sumador 1 bit  
+</p> 
+
+<p align="center">
  <img src="/Lab_2/Sumador/src/2.PNG">    
 </p>  
 <p align="center">
- Circuito Sumador completo de 2 bits   
+ Circuito Sumador completo de 1 bits   
 </p> 
 
 
