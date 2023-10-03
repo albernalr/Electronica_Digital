@@ -7,7 +7,7 @@ En este Caso uno de los integrantes del grupo contaba con un disco duro extraíb
 Para ello, lo primero que se hizo fue instalar el Rufus en el computador del siguiente enlace https://rufus.ie/es/, este programa nos permite crear USBs de arranque, con las cuales podemos hacer varias cosas, como crear medios de instalación de otros sistemas operativos mediante sus imágenes ISO. 
 
 <p align="center">
- <img src="/Lab 0/src/1.png">    
+ <img src="/Lab_0/src/1.png">    
 </p>  
 
 En este caso se usó la versión 4.2.
