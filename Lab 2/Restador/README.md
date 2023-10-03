@@ -12,7 +12,7 @@ Inicialmente partimos de crear un medio restador usando el software de Digital, 
 Así entonces la tabla de verdad queda:  
 
 <p align="center">
- <img src="/Taller_2_Lab/Restador/src/1.png">    
+ <img src="/Lab 2/Restador/src/1.png">    
 </p>  
 <p align="center">
  Fig 1. Tabla de verdad medio restador.   
@@ -33,7 +33,7 @@ Luego se diseñó en digital un restador completo, en este caso a partir de la t
 
  
 <p align="center">
- <img src="/Taller_2_Lab/Restador/src/3.png">    
+ <img src="/Lab 2/Restador/src/3.png">    
 </p>  
 <p align="center">
  Fig 3. Circuito RTL Restador Completo.    
@@ -46,7 +46,7 @@ Ver figura 4.
 A su vez tendremos 5 salidas, 4 correspondientes a los bits restados y una 5, correspondiente al C_out del sistema total, este indicarà si el número sale o no en complemento a2, en dado caso que sea 1, el número es negativo y los 4 bits deberán ser convertidos de complemento a dos a binario positivo.
 
 <p align="center">
- <img src="/Taller_2_Lab/Restador/src/4.png">    
+ <img src="/Lab 2/Restador/src/4.png">    
 </p>  
 <p align="center">
  Fig 4. Circuito RTL del Restador de 4 Bits.  
@@ -54,7 +54,7 @@ A su vez tendremos 5 salidas, 4 correspondientes a los bits restados y una 5, co
 
 
 <p align="center">
- <img src="/Taller_2_Lab/Restador/src/5.png">    
+ <img src="/Lab 2/Restador/src/5.png">    
 </p>  
 <p align="center">
  Fig 5. Tabla de Verdad abreviada del restador de 4 bits.  
@@ -75,7 +75,7 @@ Como en el caso 0100 = A y B=0001 , en decimal la resta es 4-1 que da 3 positivo
 Exportamos a Verilog desde Digital y lo abrimos en geany. ver figura 6.   
 
 <p align="center">
- <img src="/Taller_2_Lab/Restador/src/6.png">    
+ <img src="/Lab 2/Restador/src/6.png">    
 </p>  
 <p align="center">
  Fig 6. Archivo verilog exportado del Restador 4 bits.    
@@ -86,7 +86,7 @@ Ahì creamos un archivo _tb.v que serà nuestra testbech, en este caso se ajust�
 
 
 <p align="center">
- <img src="/Taller_2_Lab/Restador/src/7.png">    
+ <img src="/Lab 2b/Restador/src/7.png">    
 </p>  
 <p align="center">
  Fig 7. Código Verilog del testbech del Restador de 4 bits.
@@ -112,7 +112,7 @@ Obsérvese, que el bit para el vector A, de menor valor es inputs[4] y para el v
 Vector A = [0000] B =[0001] lo que en decimal sería A-B= -1 = 0 -  1=-1.
 
 <p align="center">
- <img src="/Taller_2_Lab/Restador/src/8.png">    
+ <img src="/Lab 2/Restador/src/8.png">    
 </p>  
 <p align="center">
  Fig 8. Imagen de gtkwave circuito Restador de 4 bits,  C_out negativo.
@@ -130,7 +130,7 @@ S= [00110] = 6.
  
 
 <p align="center">
- <img src="/Taller_2_Lab/Restador/src/9.png">    
+ <img src="/Lab 2/Restador/src/9.png">    
 </p>  
 <p align="center">
  Fig 9. Imagen de gtkwave circuito Restador de 4 bits,  C_out positivo.
