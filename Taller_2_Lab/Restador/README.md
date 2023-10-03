@@ -12,7 +12,7 @@ Inicialmente partimos de crear un medio restador usando el software de Digital, 
 Así entonces la tabla de verdad queda:  
 
 <p align="center">
- <img align="right" src="/Taller_2_Lab/Restador/src/1.png">
+ <img src="/Taller_2_Lab/Restador/src/1.png">
 </p>  
 
 Fig 1. Tabla de verdad medio restador.   
