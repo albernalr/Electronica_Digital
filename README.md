@@ -1,4 +1,4 @@
-# Electronica_Digital
+# Electronica Digital
 
 Grupo 4:
 -Ariadna Contreras
