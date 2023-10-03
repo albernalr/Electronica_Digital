@@ -12,10 +12,11 @@ Inicialmente partimos de crear un medio restador usando el software de Digital, 
 Así entonces la tabla de verdad queda:  
 
 <p align="center">
- <img src="/Taller_2_Lab/Restador/src/1.png">
+ <img src="/Taller_2_Lab/Restador/src/1.png">  
+ Fig 1. Tabla de verdad medio restador.   
 </p>  
 
-Fig 1. Tabla de verdad medio restador.   
+
 
 Analizando la tabla es facìl ver, que la columna rest, tiene forma de una compuerta XOR cuyo valor serà 1, solo cuando sean diferentes. y para la columna de C_out tendremos entonces que se parece a una AND, Con la entrada de ‘A’ negada. Construimos el circuito para este medio restador en digital.  
 
