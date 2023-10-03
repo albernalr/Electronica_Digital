@@ -13,7 +13,7 @@ Para ello, lo primero que se hizo fue instalar el Rufus en el computador del sig
 En este caso se usó la versión 4.2.
 
 <p align="center">
- <img src="/Lab 0/src/2.png">    
+ <img src="/Lab_0/src/2.png">    
 </p>  
  
 2.	Quemar la ISO 
@@ -45,7 +45,7 @@ Luego se creó el entorno digital:
 (digital) $ python --version
 
 <p align="center">
- <img src="/Lab 0/src/3.png">    
+ <img src="/Lab_0/src/3.png">    
 </p>   
 
 Fig 1. Instalaciòn de Conda
@@ -63,19 +63,19 @@ y finalmente, se instalaron programas como iceprog, Yosys, Iverilog, netlistsvg,
 (digital) $ conda install -c conda-forge gtkwave
 
 <p align="center">
- <img src="/Lab 0/src/4.png">    
+ <img src="/Lab_0/src/4.png">    
 </p>  
 
 Fig 2. Instalación de Yossys
 
 <p align="center">
- <img src="/Lab 0/src/5.png">    
+ <img src="/Lab_0/src/5.png">    
 </p>  
  
 Fig 3. Comprobación de funcionamiento de gtkwave
 
 <p align="center">
- <img src="/Lab 0/src/6.png">    
+ <img src="/Lab_0/src/6.png">    
 </p>  
 
 Fig 4. Instalación de graphviz
@@ -84,13 +84,13 @@ Fig 4. Instalación de graphviz
 El último programa en instalarse fue DIgital, se baja un archivo zip del github, se descomprime y se da doble clic en el .jar para iniciarlo, ver imágenes referenciales.
 
  <p align="center">
- <img src="/Lab 0/src/7.png">    
+ <img src="/Lab_0/src/7.png">    
 </p>  
 
 Fig 5. Carpeta Digital.zip descomprimida.
 
 <p align="center">
- <img src="/Lab 0/src/8.png">    
+ <img src="/Lab_0/src/8.png">    
 </p>  
 
 Fig 6. Digital funcionando.
@@ -100,7 +100,7 @@ Fig 6. Digital funcionando.
 Tras haberlo instalado correctamente, vamos al inicio de linux y escribimos Digital, damos enter y se nos abre el programa.
  
 <p align="center">
- <img src="/Lab 0/src/9.png">    
+ <img src="/Lab_0/src/9.png">    
 </p> 
 
 Fig 7. Geany Funcionando.
