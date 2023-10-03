@@ -1,3 +1,3 @@
 # Seleccione la carpeta de la cual desea ver el ejercicio
-# Sumador [Link](/Taller_2_Lab/Restador) 
-# Restador
+# [Sumador](/Taller_2_Lab/Sumador) 
+# [Restador](/Taller_2_Lab/Restador) 
