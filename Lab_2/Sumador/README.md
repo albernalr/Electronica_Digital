@@ -2,12 +2,16 @@
 
 ## Creaciòn de los circuitos en DIGITAL
 
+Para empezar con el diseño buscamos la tabla de verdad que necesitamos implementar en nuestro circuito:
+
 <p align="center">
  <img src="/Lab_2/Sumador/src/1.PNG">    
 </p>  
 <p align="center">
  Tabla de verdad sumador 1 bit  
 </p> 
+
+Luego de simplificar con mapas de Karnaugh obtenemos el siguiente circuito:
 
 <p align="center">
  <img src="/Lab_2/Sumador/src/2.PNG">    
@@ -16,6 +20,7 @@
  Circuito Sumador completo de 1 bits   
 </p> 
 
+Hacemos la conexión de cuatro sumadores en serie y nombramos las entradas de 1 a 4 siendo A4 y B4 las más significativas, sabemos que la conexion se tiene que hacer en serie por medio de los carry de salida de cada sumador, por esto organizamos el circuito de la siguiente forma:
 
 <p align="center">
  <img src="/Lab_2/Sumador/src/3.PNG">    
@@ -23,6 +28,8 @@
 <p align="center">
  Circuito Sumador completo de 4 bits   
 </p> 
+
+Verificamos la tabla de verdad de nuestro circuito y nos damos cuenta de que es igual a la solicitada por lo que procedemos a evaluar nuestro diseño.
 
 # 2. Implementaciòn de los circuitos en Verilog y Geany
 
