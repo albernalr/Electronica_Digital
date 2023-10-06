@@ -2,12 +2,21 @@
 
 Una vez han sido creados los circuitos restador, y sumador de 4 bits por separado, son llamados estos en el software Digital como módulos independientes en un nuevo circuito que los integra, en el cual mediante la señal de control Ctrl se  hace uso de un conjunto de 17 compuertas AND a forma de multiplexor, para elegir la operación suma (Ctrl = 1) o resta (Ctrl = 0), como se muestra a continuaciòn: 
 
+<p align="center">
+ <img src="/Lab_2/Sumador_Restador/caps/1.PNG">    
+</p>  
 
 
 Cabe mencionar que la entrada Cin está únicamente conectada al sumador, puesto que el restador no la requiere, por la forma como fue construido; y una vez las señales de entrada pasan por cada módulo de suma o resta respectivamente, estos proporcionan como salidas S1,S2,S3,S4,Co. 
 
 Debido a la cantidad de entradas, la tabla de verdad es extensa por lo que si se desea obtener la tabla completa, se recomienda dirigirse al archivo .dig del Sumador-Restador de 4 bits y abrir la tabla de verdad.
 
+<p align="center">
+ <img src="/Lab_2/Sumador_Restador/caps/1.PNG">    
+</p>  
+<p align="center">
+ Tabla de verdad sumador 1 bit  
+</p> 
 
 Implementaciòn de los circuitos en Verilog y Geany
 
