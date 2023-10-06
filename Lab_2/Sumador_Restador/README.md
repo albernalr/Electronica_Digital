@@ -11,20 +11,18 @@ Cabe mencionar que la entrada Cin está únicamente conectada al sumador, puesto
 
 Debido a la cantidad de entradas, la tabla de verdad es extensa por lo que si se desea obtener la tabla completa, se recomienda dirigirse al archivo .dig del Sumador-Restador de 4 bits y abrir la tabla de verdad.
 
-<p align="center">
- <img src="/Lab_2/Sumador_Restador/caps/1.PNG">    
-</p>  
-<p align="center">
- Tabla de verdad sumador 1 bit  
-</p> 
-
-Implementaciòn de los circuitos en Verilog y Geany
+# Implementaciòn de los circuitos en Verilog y Geany
 
 2.1 Para comprobar que el circuito funciona correctamente, lo exportamos a Verilog desde Digital y lo abrimos en geany. ver figura 6. 
 
 2.2 Ahì creamos un archivo _tb.v que serà nuestra testbech, en este caso se ajustó, teniendo en cuenta las 9 entradas, creando un array de [8:0] inputs;  y su variaciòn hasta 256, con un for.  A cada valor del array se le asoció un valor de las entradas del restador de cuatro bits. para mejor detalle ver figura 7. Así mismo, se creó un array de [4:0], con 5 espacios para las salida outs y se asignó a cada salida un valor.
  
-
+<p align="center">
+ <img src="/Lab_2/Sumador_Restador/caps/2.PNG">    
+</p>  
+<p align="center">
+ Tabla de verdad sumador 1 bit  
+</p> 
 
 
 Fig 6. Archivo verilog exportado del Restador 4 bits.
