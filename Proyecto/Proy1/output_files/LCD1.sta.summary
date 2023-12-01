@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -10.163
+TNS   : -1985.365
+
+Type  : Slow 1200mV 85C Model Setup 'PROCESADOR_LCD_REVC:U1|ESTADO.BUCLE_FIN'
+Slack : -3.921
+TNS   : -27.215
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.433
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PROCESADOR_LCD_REVC:U1|ESTADO.BUCLE_FIN'
+Slack : 0.494
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'CLK'
+Slack : -1.256
+TNS   : -7.523
+
+Type  : Slow 1200mV 85C Model Removal 'CLK'
+Slack : 1.123
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -749.474
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PROCESADOR_LCD_REVC:U1|ESTADO.BUCLE_FIN'
+Slack : 0.423
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -9.565
+TNS   : -1826.412
+
+Type  : Slow 1200mV 0C Model Setup 'PROCESADOR_LCD_REVC:U1|ESTADO.BUCLE_FIN'
+Slack : -3.668
+TNS   : -25.910
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PROCESADOR_LCD_REVC:U1|ESTADO.BUCLE_FIN'
+Slack : 0.484
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CLK'
+Slack : -1.113
+TNS   : -6.046
+
+Type  : Slow 1200mV 0C Model Removal 'CLK'
+Slack : 1.100
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -749.474
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PROCESADOR_LCD_REVC:U1|ESTADO.BUCLE_FIN'
+Slack : 0.372
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -3.948
+TNS   : -587.191
+
+Type  : Fast 1200mV 0C Model Setup 'PROCESADOR_LCD_REVC:U1|ESTADO.BUCLE_FIN'
+Slack : -1.055
+TNS   : -6.873
+
+Type  : Fast 1200mV 0C Model Hold 'PROCESADOR_LCD_REVC:U1|ESTADO.BUCLE_FIN'
+Slack : 0.082
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.176
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'CLK'
+Slack : -0.032
+TNS   : -0.032
+
+Type  : Fast 1200mV 0C Model Removal 'CLK'
+Slack : 0.370
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -537.807
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PROCESADOR_LCD_REVC:U1|ESTADO.BUCLE_FIN'
+Slack : 0.419
+TNS   : 0.000
+
+------------------------------------------------------------

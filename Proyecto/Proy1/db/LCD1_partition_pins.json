@@ -1,0 +1,117 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "RS",
+					"strict" : false
+				},
+				{
+					"name" : "ENA",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BLCD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BLCD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BLCD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BLCD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED",
+					"strict" : false
+				},
+				{
+					"name" : "FILAS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FILAS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FILAS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "FILAS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "CORD",
+					"strict" : false
+				},
+				{
+					"name" : "CORI",
+					"strict" : false
+				},
+				{
+					"name" : "Boton1",
+					"strict" : false
+				},
+				{
+					"name" : "COLUMNAS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "COLUMNAS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "COLUMNAS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "COLUMNAS[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

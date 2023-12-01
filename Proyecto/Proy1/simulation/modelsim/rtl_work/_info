@@ -1,0 +1,237 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/AB/Desktop/LCD/simulation/modelsim
+Ecaracteres_especiales_revc
+Z1 w1701132702
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8C:/Users/AB/Desktop/LCD/CARACTERES_ESPECIALES_REVC.vhd
+Z5 FC:/Users/AB/Desktop/LCD/CARACTERES_ESPECIALES_REVC.vhd
+l0
+L4 1
+VY]T?VigN8M4]L2DmgcXS=2
+!s100 zLQ]_:Z3QL7]0W08<R1Vj2
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1701312481
+!i10b 1
+Z8 !s108 1701312481.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/AB/Desktop/LCD/CARACTERES_ESPECIALES_REVC.vhd|
+Z10 !s107 C:/Users/AB/Desktop/LCD/CARACTERES_ESPECIALES_REVC.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 26 caracteres_especiales_revc 0 22 Y]T?VigN8M4]L2DmgcXS=2
+!i122 1
+l25
+L14 117
+VR;4SCjEgk@eBd>la]iRM80
+!s100 kVGW0oAD:Q7eO^C5K_UZ90
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Pcomandos_lcd_revc
+Z13 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z14 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 2
+Z16 w1701140396
+R0
+Z17 8C:/Users/AB/Desktop/LCD/COMANDOS_LCD_REVC.vhd
+Z18 FC:/Users/AB/Desktop/LCD/COMANDOS_LCD_REVC.vhd
+l0
+Z19 L10 1
+VDg>CX8;eJ?3mg?ndGL:NN0
+!s100 ==8dYGFBQOO9K:]68]2De3
+R6
+31
+b1
+R7
+!i10b 1
+R8
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/AB/Desktop/LCD/COMANDOS_LCD_REVC.vhd|
+Z21 !s107 C:/Users/AB/Desktop/LCD/COMANDOS_LCD_REVC.vhd|
+!i113 1
+R11
+R12
+Bbody
+Z22 DPx4 work 17 comandos_lcd_revc 0 22 Dg>CX8;eJ?3mg?ndGL:NN0
+R13
+R14
+R15
+R2
+R3
+!i122 2
+l0
+L51 1
+Vd^7bd2M3Y`gCOmUKBTfbd1
+!s100 Mnh3RbN=Gd9@@[AFo<GkS1
+R6
+31
+R7
+!i10b 1
+R8
+R20
+R21
+!i113 1
+R11
+R12
+Elcd1
+Z23 w1701291776
+R22
+R14
+R15
+R13
+R2
+R3
+!i122 4
+R0
+Z24 8C:/Users/AB/Desktop/LCD/LCD1.vhd
+Z25 FC:/Users/AB/Desktop/LCD/LCD1.vhd
+l0
+L9 1
+VZjABFleGdHl0QF9dWHhMP3
+!s100 K=Q7TGKgTTgD243^4Ul[`1
+R6
+31
+Z26 !s110 1701312482
+!i10b 1
+Z27 !s108 1701312482.000000
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/AB/Desktop/LCD/LCD1.vhd|
+!s107 C:/Users/AB/Desktop/LCD/LCD1.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R22
+R14
+R15
+R13
+R2
+R3
+DEx4 work 4 lcd1 0 22 ZjABFleGdHl0QF9dWHhMP3
+!i122 4
+l184
+L37 683
+V;jd1gka^;JM6`Q6=8Hb_z0
+!s100 3e:C]AO;:FL^O[CD:ankY0
+R6
+31
+R26
+!i10b 1
+R27
+R28
+Z29 !s107 C:/Users/AB/Desktop/LCD/LCD1.vhd|
+!i113 1
+R11
+R12
+Elib_tec_matricial_4x4_intesc_reva
+Z30 w1561243950
+R2
+R3
+!i122 0
+R0
+Z31 8C:/Users/AB/Desktop/LCD/LIB_TECLADO_MATRICIAL_4x4_RevA.vhd
+Z32 FC:/Users/AB/Desktop/LCD/LIB_TECLADO_MATRICIAL_4x4_RevA.vhd
+l0
+L57 1
+Vh=^lgiNlz[?a0QLg>gZ553
+!s100 H:=L8o4fLFhB^`L7JeRZ21
+R6
+31
+R7
+!i10b 1
+R8
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/AB/Desktop/LCD/LIB_TECLADO_MATRICIAL_4x4_RevA.vhd|
+Z34 !s107 C:/Users/AB/Desktop/LCD/LIB_TECLADO_MATRICIAL_4x4_RevA.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R2
+R3
+DEx4 work 33 lib_tec_matricial_4x4_intesc_reva 0 22 h=^lgiNlz[?a0QLg>gZ553
+!i122 0
+l110
+L77 165
+VoQL@61iajBS733HOIGPnY2
+!s100 OAj?Ed5zY2V0a>ABb3n><3
+R6
+31
+R7
+!i10b 1
+R8
+R33
+R34
+!i113 1
+R11
+R12
+Eprocesador_lcd_revc
+Z35 w1701132812
+R13
+R14
+R15
+R2
+R3
+!i122 3
+R0
+Z36 8C:/Users/AB/Desktop/LCD/PROCESADOR_LCD_REVC.vhd
+Z37 FC:/Users/AB/Desktop/LCD/PROCESADOR_LCD_REVC.vhd
+l0
+R19
+V5IQKReO1Xm8nPGGhnaIeO0
+!s100 kTBTL=[zORM1TcD==lmZ@0
+R6
+31
+R26
+!i10b 1
+R8
+Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/AB/Desktop/LCD/PROCESADOR_LCD_REVC.vhd|
+Z39 !s107 C:/Users/AB/Desktop/LCD/PROCESADOR_LCD_REVC.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R13
+R14
+R15
+R2
+R3
+DEx4 work 19 procesador_lcd_revc 0 22 5IQKReO1Xm8nPGGhnaIeO0
+!i122 3
+l54
+L29 844
+V5f604f?_8RCjKVT5;7`222
+!s100 LjbVOVzLIX8Y7N:5K_EmD0
+R6
+31
+R26
+!i10b 1
+R8
+R38
+R39
+!i113 1
+R11
+R12
