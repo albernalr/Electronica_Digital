@@ -26,7 +26,7 @@ En términos porcentuales un reportaje adicional del periódico El Tiempo sobre 
 Finalmente, se puede observar en un estudio realizado por el departamento administrativo nacional de estadística DANE en el 2021, que de la totalidad de delitos cometidos sobre la población de 15 años o más destacaron el hurto a bicicletas o sus partes, incluso sobre hurtos a bienes inmuebles, o de otro tipo de vehículos, como lo muestra la siguiente tabla:   
 
 
-![](Aspose.Words.7d6092f9-26ae-412b-98fc-41a0baa328b6.001.png)
+![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.001.png)
 
 Tabla tomada de [5]
 
@@ -167,55 +167,59 @@ Así mismo se identifican dos periféricos de salida los cuales son:
 
 A continuación, se presenta una imagen de todo el sistema ensamblado:
 
+![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.002.jpeg)
+
+**Figura 1**. Ensamble total del proyecto.
+
 **DESARROLLO DEL CODIGO**
 
 Inicialmente creamos el proyecto LCD\_1, usamos el lenguaje VHDL porque para nuestro proyecto fue más sencillo de implementar y la FPGA era compatible. Para la conexión del sistema de la pantalla, nos ayudamos de una librería que se llamaba Librería LCD 16x2 y para el teclado nos apoyamos en la Librería Teclado Matricial 4x4. Usando estas librerías se establecen los puentes de conexión primario, que se refiere a establecer los pulsos.  Por ejemplo, en el caso de la pantalla LED se envían 8 bits, los dos primeros son de verificación y los siguientes seis son del envió de datos.
 
 Una vez que se tienen todas las cosas conectadas y ya probadas, empezamos a generar código que es básicamente desarrollo de procesos o módulos.
 
-![](Aspose.Words.7d6092f9-26ae-412b-98fc-41a0baa328b6.002.jpeg)
+![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.003.jpeg)
 
 **Imagen 1.** Código correspondiente al primer modulo.
 
 **Modulo 1.** Consiste en hacer que la placa sea sensible al CLK, es decir cuando detecte un cambio en el reloj de flanco de subida inicie, la variable botón es el accionador de todo el programa, cuando este toma el valor de 1, todo el programa se inicia, se encienden las matrices y los teclados. Para que este se encienda es necesario que botón1 = 1, que corresponde a nuestro sensor de vibraciones, que en la vida real indicaría que la bicicleta se encuentra en movimiento, activando el programa de Alarma.
 
-![](Aspose.Words.7d6092f9-26ae-412b-98fc-41a0baa328b6.003.jpeg)
+![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.004.jpeg)
 
 **Imagen 2.** Código correspondiente al segundo módulo.
 
-**Modulo 2.** Contador interno, sabemos que el reloj interno de la FPGA son 50 MHz, es decir 50 millones de pulsos por segundos, entonces la variable b es sensible a los pulsos de la FPGA y cuanto ella llegue al limite cambiara de valor. 
+**Modulo 2.** Contador interno cuenta los segundos, sabemos que el reloj interno de la FPGA son 50 MHz, es decir 50 millones de pulsos por segundos, entonces la variable b es sensible a los pulsos de la FPGA y cuanto ella llegue al límite cambiara de valor. 
 
-![](Aspose.Words.7d6092f9-26ae-412b-98fc-41a0baa328b6.004.jpeg)
+![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.005.jpeg)
 
 **Imagen 3.** Código correspondiente al contador 15 segundos.
 
-**Modulo 3.** Contador de 15 segundos, que se debe demorar el usuario en ingresar la contraseñas, en el código instanciamos decenas como 1, unidades como 5 y el empieza restando. Cuando llegue a cero enviara una señal de que se ha completado el tiempo.
+**Modulo 3.** Contador de 15 que resta de uno en uno las variables, que se debe demorar el usuario en ingresar la contraseñas, en el código instanciamos decenas como 1, unidades como 5 y el empieza restando. Cuando llegue a cero enviara una señal de que se ha completado el tiempo.
 
-![](Aspose.Words.7d6092f9-26ae-412b-98fc-41a0baa328b6.005.jpeg)
+![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.006.jpeg)
 
-**Imagen 4.** Código correspondiente al contador 15 segundos.
+**Imagen 4.** Código correspondiente al comparador para iniciar alarma.
 
 **Modulo 4.** Aquí se ingresa al módulo 3, para consultar los valores de decenas y unidades en cada periodo del reloj, cuando ambos valores se hacen cero, se envía una señal al Zumbador de que se active, el Zumbador quedo instanciado como la variable LED. 
 
-![](Aspose.Words.7d6092f9-26ae-412b-98fc-41a0baa328b6.006.jpeg)![](Aspose.Words.7d6092f9-26ae-412b-98fc-41a0baa328b6.007.jpeg)
+![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.007.jpeg)![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.008.jpeg)
 
 **Imagen 5.** Código correspondiente al módulo 5 y 6 respectivamente.
 
-**Modulo 5 y 6.** Se encargan de mostrar la pantalla Antes y después. En el primer modulo se explica al usuario que tiene 15 segundos para escribir la contraseña, esto se muestra en la pantalla y en el segundo es donde se muestra que ingrese la contraseña, ambas dependen de la variable botón. Los caracteres están en código ASCII en representación hexadecimal, que la pantalla acepta. 
+**Modulo 5 y 6.** Se encargan de mostrar la pantalla Antes y después. En el primer módulo se explica al usuario que tiene 15 segundos para escribir la contraseña, esto se muestra en la pantalla y en el segundo es donde se muestra que ingrese la contraseña, ambas dependen de la variable botón. Los caracteres están en código ASCII en representación hexadecimal, que la pantalla acepta. 
 
-![](Aspose.Words.7d6092f9-26ae-412b-98fc-41a0baa328b6.008.jpeg)
+![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.009.jpeg)
 
 **Imagen 6.** Contador de reinicio del programa.
 
 **Modulo 7.** Contador que reestablece las variables a un valor nominal, el contador espera un segundo después de que la variable final sea 1, la convierte en 0, esto para que el programa pueda volver a iniciar.
 
-![](Aspose.Words.7d6092f9-26ae-412b-98fc-41a0baa328b6.009.jpeg)
+![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.010.jpeg)
 
 **Imagen 7.** Modulo 8. Código que muestra asteriscos sobre la pantalla.
 
-**Modulo 8.** Este módulo también depende de la variable botón, ya que es nuestro accionador, lo que se hace es presentar en la pantalla 4 caracteres que son asteriscos, espere 15 segundos y seguidamente vuelva a convertirlos en asteriscos, esto ya que, si no se hiciera, al volver a iniciar el programa dejaría los números ingresados. También ahí mismo, antes de que se cumplan esos 15 segundos, se verifica el índice en donde se escribirán los números ingresados para que coincidan con los asteriscos, numi nos habla del espacio que coincide con ese índice. El índice 0 equivale a la celda numero 13 de nuestro LCD. En este modulo solo se muestra en pantalla la contraseña.
+**Modulo 8.** Este módulo también depende de la variable botón, ya que es nuestro accionador, lo que se hace es presentar en la pantalla 4 caracteres que son asteriscos, espere 15 segundos y seguidamente vuelva a convertirlos en asteriscos, esto ya que, si no se hiciera, al volver a iniciar el programa dejaría los números ingresados. También ahí mismo, antes de que se cumplan esos 15 segundos, se verifica el índice en donde se escribirán los números ingresados para que coincidan con los asteriscos, numi nos habla del espacio que coincide con ese índice. El índice 0 equivale a la celda numero 13 de nuestro LCD. En este módulo solo se muestra en pantalla la contraseña.
 
-![](Aspose.Words.7d6092f9-26ae-412b-98fc-41a0baa328b6.010.jpeg)
+![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.011.jpeg)
 
 **Imagen 8.** Código del Módulo 9 que verifica que la clave sea correcta.
 
@@ -223,28 +227,31 @@ Una vez que se tienen todas las cosas conectadas y ya probadas, empezamos a gene
 
 Pero si por el contrario no coinciden las contraseñas, lo que hace es reiniciar el contador de numi, para que el usuario vuelva ingresar la contraseña desde el primer espacio de los 4 espacios que tiene la contraseña. Todas las veces que el usuario ingrese la clave y sea incorrecta, se mantendrá en este bucle, solo pudiendo ingresar si la contraseña es correcta.
 
-![](Aspose.Words.7d6092f9-26ae-412b-98fc-41a0baa328b6.011.jpeg)
+![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.012.jpeg)
 
-**Imagen 9.**  Código del Módulo 10 que muestra en la pantalla el menú de pausa y pausa el programa.
+**Imagen 9.**  Código del Módulo 10 se encarga de reiniciar variables de fin y camb. 
 
-**Modulo 10.** Este modulo se encarga de ser la pantalla de espera, básicamente consiste en mostrar en la pantalla un mensaje de espera con los 4 asteriscos y haciendo que el programa este en pausa, hasta que el usuario mueva la bicicleta, o hasta que alguien intente robarla.
+**Modulo 10.** Este módulo se encarga de que la variable final sea cero, para que el programa no se termine mientras se pone la clave y a su vez, cuando la clave sea correcta, regrese el valor de final que estaba en 1 a cero.
 
 A continuación, se presentan las variables instanciadas que en este caso son señales, pues son las que conectan los módulos, esto debido a que, si un módulo le está ingresando un valor, solo ese modulo puede cambiar esa señal.
+
+![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.013.jpeg)
+
+![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.014.jpeg)
 
 **Imagen 10.**  Señales o variables usadas en el programa.
 
 **DIAGRAMA RTL**
 
-![](Aspose.Words.7d6092f9-26ae-412b-98fc-41a0baa328b6.012.png)
+![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.015.png)
 
 Para una mejor visualización del diagrama dirigirse a la imagen correspondiente.
 
 **DIAGRAMAS ASM**
 
-![](Aspose.Words.7d6092f9-26ae-412b-98fc-41a0baa328b6.013.jpeg)
+![](Aspose.Words.9ccb3e40-d2c5-474a-9101-2f37d47727f4.016.jpeg)
 
 - P es Password
-- CP es un contador para la cantidad de vences que se puede ingresar un password erróneo
 - A es alarma
 - R es un mecanismo de Reset que pone el sistema como al comienzo.
 - C es un contador regresivo que permite ingresar la contraseña en un tiempo determinado.
@@ -257,7 +264,7 @@ La FPGA cuenta con el Zumbador, que es el ruido y también tiene un potenciómet
 
 **CONCLUSIONES**
 
-- En realidad, el dispositivo en si es pequeño, el tamaño aumentado de la caja de nuestra maqueta, se debe principalmente al tamaño de la FPGA por lo que se puede reducir el tamaño aún más para la aplicación deseada.
+- El tamaño del dispositivo en la caja del prototipo corresponde al tamaño de la FPGA por lo que se puede reducir el tamaño aún más para la aplicación deseada implementando únicamente los componentes necesarios. 
 - Debido a la naturaleza motriz del vehículo en el que se va a implementar el dispositivo se podría integrar un mecanismo de carga por inducción mediante un dinamo conectado a las ruedas de la bicicleta.
 - Al evaluar la FPGA de CYCLONE IV ALTERA y la de ICE40, se determina que usar la CYCLONE IV ofrece mejores alternativas, pues viene con algunos periféricos de salida como el Zumbador que usamos en el proyecto, algo con lo que la ICE40 no cuenta.
 - Resulta mucho más fácil programar en VHDL ya que está diseñado para admitir una jerarquía de diseño más completa. Puedes describir módulos y submódulos de manera más natural.
