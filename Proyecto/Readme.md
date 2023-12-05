@@ -1,6 +1,10 @@
 ﻿
 PROYECTO FINAL DIGITAL DISPOSITIVO ANTIROBO DE BICICLETAS
 
+video aquí:
+
+https://youtube.com/shorts/joAiTNGx2ac?feature=share
+
 Roland Portilla, Alejandro Bernal, Ariadna Contreras
 
 rportilla@unal.edu.co, albernalr@unal.edu.co, arcontrerasn@unal.edu.co
